@@ -1,0 +1,126 @@
+
+body {
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.block {
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-bottom: 75px;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+    .block h4 {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        margin: 0;
+        padding: 10px;
+        width: 110px;
+        text-align: center;
+        font-size: 1.2em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+.block1 {
+    background-color: #d6eaff;
+    color: #172b4d;
+}
+
+    .block1 h4 {
+        background-color: #174b87;
+        color: white;
+    }
+
+.block2 {
+    background-color: #d9f5d6;
+    color: #17452a;
+}
+
+    .block2 h4 {
+        background-color: #236b38;
+        color: white;
+    }
+
+.block3 {
+    background-color: #fff0c2;
+    color: #493400;
+}
+
+    .block3 h4 {
+        background-color: #795600;
+        color: white;
+    }
+
+.block4 {
+    background-color: #f6d8ed;
+    color: #581a45;
+}
+
+    .block4 h4 {
+        background-color: #842764;
+        color: white;
+    }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.block4 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .block {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .block {
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+    .block1, .block2, .block3 {
+        width: calc((100% - 40px) / 3);
+    }
+
+    .block4 {
+        width: calc((100% - 40px) * 2 / 3 + 20px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .block {
+        width: calc((100% - 60px) / 4);
+    }
+}
